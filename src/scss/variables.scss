@@ -1,0 +1,15 @@
+// Original React colors
+$original-bg-color: #282c34;
+$original-fg-color: #61dafb;
+$original-text-color: #fff;
+
+// Assigned colors
+$bg-color: $original-fg-color;
+$fg-color: $original-bg-color;
+$text-color: $original-text-color;
+
+// Orbit preferences
+$orbit-rotate-deg: 60deg;
+$orbit-rotate-time: 20s;
+$orbit-transparency: 15%;
+$orbit-height: 6rem;

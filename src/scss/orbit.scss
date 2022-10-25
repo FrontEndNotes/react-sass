@@ -1,0 +1,36 @@
+.logo-container {
+  height: $orbit-height * 2;
+
+  .orbit {
+    height: $orbit-height;
+    width: ($orbit-height * 2) + calc($orbit-height / 2);
+    border-radius: 50%;
+    border: 0.825rem solid $fg-color;
+  }
+
+  .react {
+    @extend .orbit;
+
+    position: relative;
+    background: radial-gradient(circle, $fg-color $orbit-transparency, transparent $orbit-transparency);
+    animation: App-logo-spin $orbit-rotate-time infinite linear;
+
+    &:before,
+    &:after {
+      @extend .orbit;
+
+      content: "";
+      position: absolute;
+      left: -0.625rem;
+      top: -0.625rem;
+    }
+
+    &:before {
+      transform: rotate($orbit-rotate-deg);
+    }
+
+    &:after {
+      transform: rotate($orbit-rotate-deg * 2);
+    }
+  }
+}

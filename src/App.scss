@@ -1,0 +1,26 @@
+@import "../src/scss/variables.scss";
+@import "../src/scss/mixins.scss";
+@import "../src/scss/animations.scss";
+@import "../src/scss/orbit.scss";
+
+.App {
+    text-align: center;
+
+    &-logo {
+        height: 40vmin;
+        pointer-events: none;
+    }
+
+    &-header {
+        background-color: $bg-color;
+        min-height: 100vh;
+        font-size: calc(10px + 2vmin);
+        color: $text-color;
+
+        @include display-center();
+    }
+
+    &-link {
+        color: $fg-color;
+    }
+}
